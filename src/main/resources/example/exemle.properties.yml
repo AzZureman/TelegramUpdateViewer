@@ -1,3 +1,21 @@
 bot-settings:
     botName: "botname"
     token: "bottoken"
+
+----
+
+bot-settings:
+    botName: "botname"
+    token: "bottoken"
+    proxy-host: "xxx.xxx.xxx.xxx"
+    proxy-port: xxx
+
+----
+
+bot-settings:
+    botName: "botname"
+    token: "bottoken"
+    proxy-host: "xxx.xxx.xxx.xxx"
+    proxy-port: xxx
+    proxy-user: "user"
+    proxy-pass: "pass"

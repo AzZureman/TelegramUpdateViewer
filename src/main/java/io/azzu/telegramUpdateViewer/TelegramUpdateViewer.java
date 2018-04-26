@@ -15,7 +15,7 @@ public class TelegramUpdateViewer extends TelegramLongPollingBot {
     private final Gson gson = new GsonBuilder().serializeNulls().create();
 
     public TelegramUpdateViewer(BotConfig config, SocketHandler socketHandler){
-        super();
+        super(config.getDefaultBotOptions());
         this.config = config;
         this.socketHandler = socketHandler;
     }
@@ -27,7 +27,7 @@ public class TelegramUpdateViewer extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return config.getBotname();
+        return config.getName();
     }
 
     @Override
